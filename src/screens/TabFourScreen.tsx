@@ -6,8 +6,8 @@ import { StyleSheet } from 'react-native';
 
 import { Text, View } from '../components/Themed';
 import { Webview } from '../components/Webview';
-import { RootStackParamList } from '../types';
-type Props = StackScreenProps<RootStackParamList, 'Root'>;
+import { ParamList } from '../types';
+type Props = StackScreenProps<ParamList, 'Root'>;
 
 export default function TabFourScreen({ navigation }: Props) {
   return (
@@ -16,6 +16,10 @@ export default function TabFourScreen({ navigation }: Props) {
       <Button
         title="Go to Register"
         onPress={() => navigation.navigate('Register')}
+      />
+      <Button
+        title="Go to UserInfo"
+        onPress={() => navigation.navigate('UserInfo')}
       />
       <Webview />
     </View>

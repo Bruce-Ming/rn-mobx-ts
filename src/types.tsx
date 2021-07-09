@@ -7,15 +7,14 @@ import { RouteProp } from '@react-navigation/core';
 import { ParamListBase } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 
-export type ParamList =
-  | RootStackParamList
-  | BottomTabParamList
-  | TabOneParamList
-  | TabThreeParamList
-  | TabTwoParamList
-  | TabFourParamList
-  | HomeParamList
-  | RegisterParamList;
+export type ParamList = RootStackParamList &
+  BottomTabParamList &
+  TabOneParamList &
+  TabThreeParamList &
+  TabTwoParamList &
+  TabFourParamList &
+  HomeParamList &
+  RegisterParamList;
 
 export type RootStackParamList = {
   Root: undefined;
