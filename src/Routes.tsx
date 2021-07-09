@@ -1,10 +1,9 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import React from 'react';
-import { Button } from 'react-native';
 import { AppTabs } from './AppTabs';
 import { Center } from './components/Center';
-import { Text, View } from './components/Themed';
+import { Text } from './components/Themed';
 
 interface RoutesProps {}
 const Stack = createStackNavigator();
